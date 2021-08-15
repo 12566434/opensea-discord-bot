@@ -47,7 +47,7 @@ async function main() {
     "https://api.opensea.io/api/v1/events?" + new URLSearchParams({
       offset: '0',
       limit: '100',
-      event_type: 'successful',
+      event_type: 'created',
       only_opensea: 'false',
       occurred_after: hoursAgo.toString(), 
       collection_slug: process.env.COLLECTION_SLUG!,
